@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DCI — Programs & Facilities</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="DCI logo" class="logo">
+      <h1>Department of Computing &amp; Informatics (DCI)</h1>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html" class="active">Programs &amp; Facilities</a></li>
+        <li><a href="inquiry.html">Inquiry / Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Academic Programs</h2>
+
+      <article class="program">
+        <h3>Bachelor of Science in Information Technology (BSIT)</h3>
+        <img src="images/program_bsit.svg" alt="BSIT program image" class="program-image">
+        <p>The BSIT program focuses on practical skills in software development, system administration, networking, and multimedia applications. Students gain hands-on experience through lab work and industry projects.</p>
+        <h4>Career Opportunities</h4>
+        <ul>
+          <li>Systems Administrator</li>
+          <li>Web / Mobile Developer</li>
+          <li>IT Support Specialist</li>
+          <li>Multimedia Specialist</li>
+        </ul>
+      </article>
+
+      <article class="program">
+        <h3>Bachelor of Science in Computer Science (BSCS)</h3>
+        <img src="images/program_bscs.svg" alt="BSCS program image" class="program-image">
+        <p>The BSCS program emphasizes theoretical and practical aspects of computing, including algorithms, software engineering, artificial intelligence, and research methodologies.</p>
+        <h4>Career Opportunities</h4>
+        <ul>
+          <li>Software Engineer</li>
+          <li>Data Scientist / Analyst</li>
+          <li>Researcher / AI Engineer</li>
+        </ul>
+      </article>
+
+    </section>
+
+    <section>
+      <h2>Program Comparison</h2>
+      <table class="program-table">
+        <thead>
+          <tr>
+            <th>Program</th>
+            <th>Main Focus</th>
+            <th>Sample Career</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>BS Information Technology</td>
+            <td>Application development, systems, multimedia</td>
+            <td>Web Developer, Systems Admin</td>
+            <td>4 years</td>
+          </tr>
+          <tr>
+            <td>BS Computer Science</td>
+            <td>Theory, algorithms, AI, research</td>
+            <td>Software Engineer, Data Scientist</td>
+            <td>4 years</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Facilities</h2>
+      <div class="facility">
+        <h3>Computer Laboratory</h3>
+        <img src="images/facility_lab.svg" alt="Computer laboratory" class="facility-image">
+        <p>High-performance workstations, virtualization servers, and development tools for software and systems projects.</p>
+        <p><strong>Main equipment:</strong> PC workstations, servers, networking switches.</p>
+      </div>
+
+      <div class="facility">
+        <h3>Networking Laboratory</h3>
+        <img src="images/facility_network.svg" alt="Networking lab" class="facility-image">
+        <p>Hands-on networking lab for routing, switching, and security experiments.</p>
+        <p><strong>Main equipment:</strong> Routers, managed switches, packet analyzers.</p>
+      </div>
+
+      <div class="facility">
+        <h3>Multimedia / Research Studio</h3>
+        <img src="images/facility_media.svg" alt="Multimedia studio" class="facility-image">
+        <p>Studio space for multimedia production, research, and collaborative projects.</p>
+        <p><strong>Main equipment:</strong> Cameras, audio equipment, editing workstations.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Department of Computing &amp; Informatics — All rights reserved.</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Department of Computing &amp; Informatics (DCI) — Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="DCI logo" class="logo">
+      <h1>Department of Computing &amp; Informatics (DCI)</h1>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="programs.html">Programs &amp; Facilities</a></li>
+        <li><a href="inquiry.html">Inquiry / Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner" role="region" aria-label="Department banner">
+      <h2>Innovating with Technology and People</h2>
+      <p class="lead">We train the next generation of IT and Computer Science professionals through hands-on labs, research, and industry partnerships.</p>
+    </section>
+
+    <section class="introduction">
+      <h3>About the Department</h3>
+      <p>The Department of Computing &amp; Informatics (DCI) offers degree programs and learning resources that focus on software development, systems engineering, networking, cybersecurity, and multimedia technologies.</p>
+      <p>Our mission is to deliver quality education, foster critical thinking, and prepare students for careers in a fast-changing digital world. We emphasize practical experience in well-equipped labs and close collaboration with faculty researchers and industry partners.</p>
+    </section>
+
+    <section class="dean" id="dean">
+      <h3>Dean's Message</h3>
+      <div class="dean-content">
+        <img src="images/dean.svg" alt="Photo of the Dean" class="dean-photo">
+        <div class="dean-text">
+          <h4>Dr. Alex R. Santos</h4>
+          <p class="position">Dean, Department of Computing &amp; Informatics</p>
+          <p>Welcome to DCI. We are committed to academic excellence and to supporting our students' aspirations. Our faculty combine teaching, research, and industry collaboration to give students a comprehensive learning experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faculty" id="faculty">
+      <h3>Faculty Members</h3>
+      <div class="faculty-grid">
+        <article class="faculty-card">
+          <img src="images/faculty1.svg" alt="Dr. Maria Lopez" class="faculty-photo">
+          <h5>Dr. Maria Lopez</h5>
+          <p class="role">Professor — Software Engineering</p>
+        </article>
+
+        <article class="faculty-card">
+          <img src="images/faculty2.svg" alt="Prof. John Tan" class="faculty-photo">
+          <h5>Prof. John Tan</h5>
+          <p class="role">Associate Professor — Computer Networks</p>
+        </article>
+
+        <article class="faculty-card">
+          <img src="images/faculty3.svg" alt="Dr. Mei Chen" class="faculty-photo">
+          <h5>Dr. Mei Chen</h5>
+          <p class="role">Assistant Professor — Cybersecurity</p>
+        </article>
+
+        <article class="faculty-card">
+          <img src="images/faculty4.svg" alt="Prof. Ramon Cruz" class="faculty-photo">
+          <h5>Prof. Ramon Cruz</h5>
+          <p class="role">Lecturer — Multimedia &amp; Research</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="features">
+      <h3>Department Features &amp; Services</h3>
+      <ul>
+        <li>Computer and Networking Laboratories with modern equipment</li>
+        <li>Industry internship and career placement support</li>
+        <li>Research and multimedia studio facilities</li>
+        <li>Student project and collaboration spaces</li>
+      </ul>
+    </section>
+
+    <section class="promo-media">
+      <h3>Promotional Video</h3>
+      <div class="video-wrapper">
+        <!-- Replace the iframe src with your own promotional video or use a local video file -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="DCI promotional video" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <h4>Background / Institutional Audio</h4>
+      <audio controls>
+        <source src="media/anthem.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Department of Computing &amp; Informatics — All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

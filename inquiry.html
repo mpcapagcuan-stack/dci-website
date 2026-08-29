@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DCI — Inquiry / Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="DCI logo" class="logo">
+      <h1>Department of Computing &amp; Informatics (DCI)</h1>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs &amp; Facilities</a></li>
+        <li><a href="inquiry.html" class="active">Inquiry / Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Program Inquiry Form</h2>
+
+    <form action="#" method="post" class="inquiry-form">
+      <label for="fullname">Full Name</label>
+      <input id="fullname" name="fullname" type="text" required>
+
+      <label for="email">Email Address</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="phone">Contact Number</label>
+      <input id="phone" name="phone" type="tel">
+
+      <label for="birthdate">Birth Date</label>
+      <input id="birthdate" name="birthdate" type="date">
+
+      <label for="address">Address</label>
+      <input id="address" name="address" type="text">
+
+      <fieldset>
+        <legend>Preferred Program</legend>
+        <label><input type="radio" name="program" value="bsit" required> BS Information Technology</label>
+        <label><input type="radio" name="program" value="bscs"> BS Computer Science</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Areas of Interest</legend>
+        <label><input type="checkbox" name="interest" value="webdev"> Web Development</label>
+        <label><input type="checkbox" name="interest" value="programming"> Programming</label>
+        <label><input type="checkbox" name="interest" value="networking"> Networking</label>
+        <label><input type="checkbox" name="interest" value="cybersecurity"> Cybersecurity</label>
+        <label><input type="checkbox" name="interest" value="multimedia"> Multimedia</label>
+      </fieldset>
+
+      <label for="education">Current Educational Level</label>
+      <select id="education" name="education">
+        <option value="highschool">High School Graduate</option>
+        <option value="college">College</option>
+        <option value="transferee">Transferee</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="visit">Preferred Campus Visit Date</label>
+      <input id="visit" name="visit" type="date">
+
+      <label for="time">Preferred Consultation Time</label>
+      <input id="time" name="time" type="time">
+
+      <label for="question">Question / Message</label>
+      <textarea id="question" name="question" rows="5"></textarea>
+
+      <label class="confirm"><input type="checkbox" name="confirm" required> I confirm that the information provided is correct.</label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Submit</button>
+        <button type="reset" class="btn" style="background:#999;">Reset</button>
+      </div>
+    </form>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Department of Computing &amp; Informatics — All rights reserved.</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
